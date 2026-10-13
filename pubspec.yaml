@@ -1,0 +1,82 @@
+name: video_diary
+description: "Video Diary - Your Personal Video Journal"
+version: 1.2.6+22
+
+environment:
+  sdk: ^3.8.1
+dependencies:
+  flutter:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_native_splash: ^2.4.7
+
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  camerawesome: ^2.5.0
+  video_player: ^2.9.2
+  file_picker: ^10.3.2
+  file_selector: ^1.0.3
+  flutter_local_notifications: ^19.5.0
+  permission_handler: ^12.0.1
+  path_provider: ^2.1.4
+  intl: ^0.20.2
+  timezone: ^0.10.1
+  flutter_timezone: ^5.0.0
+  video_thumbnail: ^0.5.3
+  device_info_plus: ^11.2.0
+  flutter_slidable: ^4.0.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  share_plus: ^12.0.1
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.13.0
+  shared_preferences: ^2.5.3
+  convert: ^3.1.2
+  crypto: ^3.0.6
+  in_app_review: ^2.0.11
+  archive: ^4.0.7
+  sensors_plus: ^7.0.0
+  wakelock_plus: ^1.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.8
+
+  # Change App Package Name
+  change_app_package_name: ^1.4.0
+  rename_app: ^1.6.5
+
+  flutter_lints: ^6.0.0
+
+  flutter_launcher_icons: ^0.14.2
+
+# Splash Screen Settings
+flutter_native_splash:
+  color: "#030303" # Arka plan rengi
+  image: assets/logo/splash600.png # Splash görüntüsü
+  android_12:
+    image: assets/logo/splash1152.png # Android 12+ için splash görüntüsü
+    color: "#030303" # Arka plan rengi
+
+# App Icon Settings
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/logo.png"
+  adaptive_icon_background: "#030303"
+  adaptive_icon_foreground: "assets/logo/logo_transparent.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+
+dependency_overrides:
+  camerawesome:
+    path: packages/camerawesome_local
